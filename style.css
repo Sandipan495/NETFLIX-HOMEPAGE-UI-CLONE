@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  /* background-size: cover; */
+}
+
+body {
+  background-color: black;
+}
+
+.main {
+  background-image: url("Assets/Images/bg.webp");
+  background-position: center center;
+  background-size: max(1200px, 100vw);
+  background-repeat: no-repeat;
+  height: 644px;
+  position: relative;
+}
+
+.main .box {
+  height: 644px;
+  width: 100%;
+  opacity: 0.69;
+  position: absolute;
+  top: 0;
+  background-color: black;
+}
+
+nav {
+  max-width: 165vh;
+  justify-content: space-between;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  height: 100px;
+  /* margin: 3px 5px 3px 40px; */
+  padding: 10px 30px 10px 30px;
+  box-sizing: border-box;
+  max-width: 80rem;
+}
+
+nav img {
+  /* width: 180px; */
+  position: relative;
+  z-index: 10;
+  box-sizing: border-box;
+  /* margin:3px 45px 3px 45px; 
+  padding: 2px 10px 10px 2px; */
+}
+
+nav button {
+  justify-content: center;
+  position: relative;
+  z-index: 10;
+}
+
+/* .na{
+  position: absolute;
+  pointer-events: none;
+  width: 1rem;
+  height: 1rem;
+  left: .75rem;
+  right: auto;
+  z-index: 1;
+} */
+.hero {
+  /* font-family: "Martel Sans", sans-serif; */
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  height: 80%;
+  /* height: auto; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* max-width: 120rem; */
+  color: white;
+  position: relative;
+  gap: 23px;
+  padding: -1 30px;
+}
+
+.hero> :first-child {
+  /*hero> used immidiate first child*/
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-weight: 800;
+  font-size: 3.1rem;
+  text-align: center;
+  max-width: 40rem;
+  /* margin-bottom: 0.1rem; */
+  justify-content: center;
+}
+
+@media(min-width:800px) {
+  .hero> :first-child(1) {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+}
+
+.hero :nth-child(2) {
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.hero :nth-child(3) {
+  font-weight: 400;
+  font-size: 1rem;
+  text-align: center;
+  max-width: 30rem;
+}
+
+.separation {
+  height: 7px;
+  background-color: rgb(46, 44, 44);
+  position: relative;
+  z-index: 20;
+}
+
+.btn {
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  padding: 5px 10px;
+  font-weight: 550;
+  background-color: transparent;
+  color: white;
+  border-radius: 6px;
+  border: 1px solid white;
+  cursor: pointer;
+  /* margin-inline-end: 8px; */
+}
+
+.btn-red-sign {
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  font-size: .9rem;
+  background-color: rgba(255, 0, 0, 0.763);
+  color: white;
+  font-weight:500;
+  border-radius: 5px;
+  padding: 5px 12px 6px 12px;
+  /* margin-right: 120px; */
+  border: transparent;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-red-getstart {
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu,
+    sans-serif;
+  background-color: rgba(255, 0, 0, 0.728);
+  color: white;
+  border-radius: 6px;
+  padding: 8px 8px 15px 15px;
+  margin: 0px 1px 15px 5px;
+  border: transparent;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  max-width: 15rem;
+}
+
+.btn-red-getstart:hover {
+  background-color: #e33636;
+}
+
+.top-email {
+  padding: 15px 130px 15px 15px;
+  margin: 0px 1px 15px 10px;
+  color: white;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  border: 1px solid rgba(246, 238, 238, .5);
+  justify-content: center;
+  align-items: center;
+  max-width: 15rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.top-email:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* .main input:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+} */
+
+/* .main-2{
+  justify-content: center;
+  position: absolute;
+} */
+.curve-c {
+  /* margin-top: 1.875rem; */
+  box-sizing: border-box;
+  overflow-x: hidden;
+  position: relative;
+  height: 6.25rem;
+  z-index: 1;
+}
+
+.curve-container {
+  /* margin-top: 1.875rem; */
+  height: 10%;
+  bottom: 10%;
+  width: 100%;
+  left: -50%;
+}
+
+.curve::before {
+  margin-top: 1.875rem;
+  width: 200%;
+  left: -50%;
+}
+
+.curve {
+  /* box-sizing: border-box; */
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  /* margin-top: -0.25rem; */
+  margin-top: inherit;
+  border-radius: inherit;
+  /* border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%; */
+  background: linear-gradient(to right,
+      rgba(33, 13, 22, 1) 16%,
+      rgba(184, 40, 105, 1),
+      rgba(229, 9, 20, 1),
+      rgba(184, 40, 105, 1),
+      rgba(33, 13, 22, 1) 84%);
+}
+
+.cur {
+  width: 180%;
+  left: -40%;
+  box-sizing: border-box;
+  position: absolute;
+  height: 100%;
+  top: 0;
+  margin: auto;
+  align-items: center;
+  border: solid 0.25rem transparent;
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+  /* border-bottom-left-radius: 50% 100%;
+  border-bottom-right-radius: 50% 80%; */
+  border-bottom: none;
+  background: radial-gradient(50% 500% at 50% -420%,
+      rgba(64, 97, 231, 0.4) 80%,
+      rgba(0, 0, 0, 0.1) 100%), black;
+  background-clip: padding-box;
+}
+
+.trending {
+  box-sizing: border-box;
+  padding: 20px;
+  padding-inline-start: 100px;
+  z-index: 10;
+  color: white;
+  background-color: black;
+  justify-content: space-evenly;
+  display: flex;
+  /* position:absolute; */
+  border-radius: 0.5rem;
+  height: 300px;
+  width: auto;
+  margin-right: 10px;
+  overflow-x: auto;
+}
+
+.trending img {
+  height: 250px;
+  width: 180px;
+  margin-right: 20px;
+  border-radius: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.trending img:hover {
+  transform: scale(1.1);
+  /* background-color: black; */
+  /* animation:ease-in-out; */
+  /* transition: 0.2s ease-in-out; */
+  /* transition:transform 0.2s ease-in-out; */
+}
+
+.trending:has(img) {
+  cursor: pointer;
+}
+
+.Page {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-evenly;
+  padding: 20px;
+}
+
+.reason {
+  position: relative;
+  display:inline-flexbox;
+  color: white;
+  /* background: linear-gradient(to right,
+      rgb(10, 8, 34) 16%,
+      rgb(36, 19, 73),
+      rgba(15, 14, 74, 0.113),
+      rgb(55, 9, 68),
+      rgb(67, 11, 36) 84%); */
+      background: linear-gradient(149deg, #192247 0%, #210e17 96.86%);
+  border-radius: 0.9rem;
+  justify-content:space-evenly;
+  padding: 20px;
+  margin: 10px;
+  margin: 10px;
+  width: 45%;
+  /* width: auto; */
+  height: auto;
+  box-sizing:border-box;
+  backdrop-filter: blur(30px);
+}
+.ques{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  position: relative;
+  display:inline-flexbox;
+  color: white;
+ 
+}
+.freq{
+  background-color: rgb(42, 41, 41);
+  padding: 20px;
+  margin: 5px;
+  width: 100%;
+  position: relative;
+  display:inline-flexbox;
+  box-sizing:content-box;
+  backdrop-filter: blur(30px);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  /* transition:; */
+}
+.freq:hover{
+  background-color: rgb(82, 80, 80);
+}
+.em{
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.country{
+  padding: 15px 130px 15px 15px;
+  margin: 0px 1px 15px 95px;
+  color: white;
+  background-color: rgb(31, 31, 33);
+  font-weight: 500;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  border: 1px solid rgba(246, 238, 238, .5);
+  justify-content: center;
+  align-items: center;
+  max-width: 15rem;
+  min-height: 16px;
+  min-width: 16px;
+}
+.btn-email {
+  padding: 15px 130px 15px 15px;
+  /* padding-right: inherit; */
+  margin: 0px 1px 15px 10px;
+  color: white;
+  background-color: transparent;
+  font-weight: 500;
+  font-size: 1.2rem;
+  border-radius: 6px;
+  border: 1px solid rgba(246, 238, 238, .5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.btn-email:hover {
+  transform: scale(1.02);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
